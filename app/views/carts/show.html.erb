@@ -1,3 +1,4 @@
+<% if enhanced_cart.length != 0  %>
 <section class="cart-show">
 
   <header class="page-header">
@@ -50,3 +51,9 @@
   </div>
 
 </section>
+
+<% else %>
+<div class="alert alert-primary" role="alert">
+  Cart is emtpty <%= link_to 'Back to home', products_path %>
+</div>
+<% end %>
