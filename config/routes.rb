@@ -20,6 +20,8 @@ Rails.application.routes.draw do
 
   get '/about', to: 'about#show'
 
+  get '/signup', to: 'user#new'
+  get '/users', to: 'users#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
